@@ -1,0 +1,53 @@
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 0:30:00 -vf "fps=25,yadif=0:0:0,crop=w=640:h=480,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_30_min.mp4"
+ 
+
+"C:\Users\Brandon\AppData\Local\Temp\2020-03-28 12-29-48.mp4"
+
+
+
+ffmpeg -framerate 25 -vsync 1 -video_size 720x576 -f dshow -rtbufsize 250000k \
+  -crossbar_video_input_pin_number 0 -crossbar_audio_input_pin_number 2 \
+  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video" \
+  -t 4:10:00 -vf "fps=25,yadif=0:0:0,crop=w=702:h=576,hqdn3d=6:4:14:10,scale=640x480" \
+  -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p \
+  -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500" \
+  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_0.mp4"
+  
+  
+  
+
+ffmpeg -framerate 25 -vsync 1 -video_size 720x576 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 0 -crossbar_audio_input_pin_number 2  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00 -vf "fps=25,yadif=0:0:0,crop=w=702:h=576,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_0.mp4"
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00 -vf "fps=25,yadif=0:0:0,crop=w=702:h=576,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_02.mp4"
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00 -vf "fps=25,yadif=0:0:0,crop=w=702:h=576,hqdn3d=6:4:14:10,scale=640x480"   -c:v vp9     -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_1.mp4"
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00                                                                            -c:v vp9     -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_1.mp4"
+
+
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00 -vf "fps=25,yadif=0:0:0,crop=w=640:h=480,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_03.mp4"
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 0:01:00 -vf "fps=25,yadif=0:0:0,crop=w=640:h=480,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_03.mp4"
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 0:30:00 -vf "fps=25,yadif=0:0:0,crop=w=640:h=480,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_30_min.mp4"
+
+
+ffmpeg -framerate 25 -vsync 1 -video_size 640x480 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00 -vf "fps=25,yadif=0:0:0,                 hqdn3d=6:4:14:10,scale=640x480"   -c:v vp9     -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_1.mp4"
+
+
+
+
+
+
+
+ffmpeg -f dshow -list_options true -i video="VIDBOX NW03 USB Video"
+
+
+
+avg 7458 kbytes / min
+261030 / 35 min
+15661800 / 60
+
+
+
+
+
+
+
+ffmpeg -framerate 25 -vsync 1 -video_size 720x576 -f dshow -rtbufsize 250000k -crossbar_video_input_pin_number 1 -crossbar_audio_input_pin_number 4  -i video="VIDBOX NW03 USB Video":audio="VIDBOX NW03 USB Video"   -t 4:10:00 -vf "fps=25,yadif=0:0:0,crop=w=702:h=576,hqdn3d=6:4:14:10,scale=640x480"   -c:v libx264 -preset medium -tune film -profile:v main -level 3.1 -pix_fmt yuv420p   -crf 25 -maxrate 1750k -bufsize 3500k -af "aresample=async=1000,highpass=200,lowpass=3500"  -c:a aac -b:a 96k -strict -2 -r 25 "C:\Users\Brandon\Documents\Personal_Projects\vhs_convert\big_data\FFMPEG_test_0.mp4"
+
