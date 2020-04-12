@@ -20,8 +20,8 @@ if __name__ == "__main__":
         print(og_abs_path)
         print(new_abs_path)
         
-        wait()
-        fsu.rename_file_overwrite(og_abs_path)
+#         wait()
+        fsu.rename_file_overwrite(og_abs_path, new_abs_path)
 
 
 
